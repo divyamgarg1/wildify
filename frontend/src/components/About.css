@@ -1,0 +1,135 @@
+.about-container {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #2a5298, #4a7043); /* Blue to forest green gradient */
+    padding: 40px 20px;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /* Prevents overflow from scaling */
+}
+
+.about-header {
+    background: linear-gradient(to right, #2a5298, #4a7043);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    color: #e6f0e6; /* Light green tint for nature vibe */
+}
+
+.about-content {
+    max-width: 900px;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    line-height: 1.9; /* Increased for better spacing */
+    background: rgba(255, 255, 255, 0.15); /* Slightly more opaque */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-highlight {
+    background: #a8d5a2; /* Soft green for nature theme */
+    color: #2a5298; /* Dark blue for contrast */
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hover word styling */
+.hover-word {
+    position: relative; /* Allows z-index control */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    display: inline-block;
+    padding: 0 2px; /* Small padding to prevent overlap */
+    z-index: 1; /* Ensures hovered word stays above others */
+}
+
+.hover-word:hover {
+    transform: translateY(-5px); /* Lift up instead of scale to avoid overlap */
+    color: #a8d5a2; /* Soft green on hover */
+    background: rgba(74, 112, 67, 0.2); /* Subtle green background */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for "pop" effect */
+    z-index: 2; /* Brings hovered word to front */
+}
+
+/* Paragraph spacing */
+.about-content p {
+    margin: 20px 0; /* Increased for better separation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-header {
+        padding: 30px 15px;
+    }
+
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        font-size: 1rem;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .about-container {
+        padding: 20px 10px;
+    }
+
+    .hover-word:hover {
+        transform: translateY(-3px); /* Smaller lift on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header {
+        padding: 20px 10px;
+    }
+
+    .about-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    .about-highlight {
+        padding: 4px 8px;
+    }
+
+    .about-container {
+        padding: 15px 5px;
+    }
+
+    .hover-word {
+        padding: 0 1px; /* Tighter padding on mobile */
+    }
+
+    .hover-word:hover {
+        transform: translateY(-2px); /* Minimal lift on mobile */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+    }
+}

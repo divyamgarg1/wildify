@@ -1,0 +1,147 @@
+.analytics-container {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #2a5298, #4a7043); /* Blue to forest green */
+    padding: 40px 20px;
+    min-height: 100vh; /* Full height */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .analytics-header {
+    background: linear-gradient(to right, #2a5298, #4a7043);
+    color: #e6f0e6; /* Light green tint */
+    padding: 50px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .analytics-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .analytics-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Space between description and cards */
+    max-width: 1200px;
+    width: 100%;
+    flex-grow: 1; /* Fill available height */
+  }
+  
+  .analytics-description {
+    color: #e0e0e0; /* Light gray for readability */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px; /* Space before cards */
+    max-width: 800px; /* Limit width for readability */
+  }
+  
+  .analytics-cards {
+    display: flex;
+    justify-content: flex-end; /* Align cards to the right */
+    gap: 30px; /* Space between cards */
+    width: 100%;
+    margin-top: auto; /* Push cards to the bottom */
+    padding-right: 20px; /* Right padding for alignment */
+  }
+  
+  .analytics-card {
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+    color: #e0e0e0; /* Light gray text */
+    text-align: center; /* Centered text within cards */
+  }
+  
+  .analytics-card:hover {
+    transform: translateY(-10px); /* Lift on hover */
+  }
+  
+  .analytics-card h2 {
+    color: #a8d5a2; /* Soft green for titles */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .analytics-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .analytics-cards {
+      justify-content: center; /* Center cards on smaller screens */
+      padding-right: 0; /* Remove right padding */
+    }
+  
+    .analytics-card {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .analytics-header h1 {
+      font-size: 2rem;
+    }
+  
+    .analytics-description {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+  
+    .analytics-cards {
+      flex-direction: column; /* Stack cards vertically on tablets */
+      gap: 20px;
+      align-items: center; /* Center cards */
+    }
+  
+    .analytics-card {
+      max-width: 100%;
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .analytics-container {
+      padding: 20px 10px;
+    }
+  
+    .analytics-header {
+      padding: 30px 15px;
+    }
+  
+    .analytics-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .analytics-description {
+      font-size: 0.9rem;
+      max-width: 90%;
+    }
+  
+    .analytics-card {
+      padding: 15px;
+    }
+  
+    .analytics-card h2 {
+      font-size: 1.3rem;
+    }
+  
+    .analytics-card p {
+      font-size: 0.9rem;
+    }
+  }

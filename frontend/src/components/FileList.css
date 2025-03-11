@@ -1,0 +1,111 @@
+/* frontend/src/components/FileList.css */
+.file-list-container {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #2a5298, #4a7043);
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.file-list-container h2 {
+  font-size: 2rem;
+  color: #e6f0e6;
+  margin-bottom: 20px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter-container input {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background: #a8d5a2;
+  color: #2a5298;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background: #8cc084;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.file-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.file-item a {
+  color: #a8d5a2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.file-item a:hover {
+  text-decoration: underline;
+}
+
+.file-item span {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-left: 10px;
+}
+
+.file-item button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background: #ff9999;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.file-item button:hover {
+  background: #ff6666;
+}
+
+.error-message {
+  color: #ff9999;
+  margin: 10px 0;
+}
+
+.refresh-btn {
+  padding: 10px 20px;
+  background: #a8d5a2;
+  color: #2a5298;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.refresh-btn:hover {
+  background: #8cc084;
+}

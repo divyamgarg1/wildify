@@ -1,0 +1,124 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Adjusted for better spacing */
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #2a5298, #4a7043); /* Blue to forest green */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+  position: sticky; /* Sticks to top when scrolling */
+  top: 0;
+  z-index: 1000; /* Ensures it stays above content */
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e6f0e6; /* Light green tint */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Subtle pop on hover */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0; /* Removes default margin */
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #e0e0e0; /* Light gray for readability */
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 12px; /* Adds clickable area */
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a8d5a2; /* Soft green on hover */
+  background: rgba(168, 213, 162, 0.2); /* Subtle green background */
+  border-radius: 6px;
+  transform: translateY(-2px); /* Slight lift */
+}
+
+.auth-links {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  background: #a8d5a2; /* Soft green from theme */
+  color: #2a5298; /* Dark blue text */
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:hover {
+  background: #8cc084; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    position: static; /* Removes absolute positioning */
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 8px 0; /* Adjusted for vertical layout */
+  }
+
+  .auth-links {
+    position: static; /* Removes absolute positioning */
+    margin-top: 15px;
+    flex-direction: row; /* Keeps buttons side-by-side */
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
